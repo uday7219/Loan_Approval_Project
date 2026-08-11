@@ -3,7 +3,7 @@ import pandas as pd
 from joblib import load
 
 # Load trained model
-model = load("D:\Loan_Approval_Project\Model_Dir\Loan_Model.joblib")
+model = load("D:\\Loan_Approval_Project\\Model_Dir\\Loan_Model.joblib")
 
 st.set_page_config(page_title="Loan Status Prediction", page_icon="🏦")
 
