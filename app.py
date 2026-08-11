@@ -1,9 +1,17 @@
 import streamlit as st
+import os
 import pandas as pd
 from joblib import load
 
 # Load trained model
-model = load("Model_Dir\\Loan_Model.joblib")
+#model = load("Model_Dir\\Loan_Model.joblib")
+from pathlib import Path
+import joblib
+
+BASE_DIR = Path(__file__).resolve().parent
+MODEL_PATH = BASE_DIR / "Model_Dir" / "Loan_Model.joblib"
+
+model = joblib.load(MODEL_PATH)
 
 st.set_page_config(page_title="Loan Status Prediction", page_icon="🏦")
 
