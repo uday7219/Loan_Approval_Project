@@ -1,10 +1,12 @@
 import streamlit as st
 import pandas as pd
 import joblib
-# Load trained model
-
 from pathlib import Path
 from joblib import load
+
+# Load trained model
+
+
 BASE_DIR = Path(__file__).resolve().parent
 MODEL_PATH = BASE_DIR / "Model_Dir" / "Loan_Model.joblib"
 
